@@ -35,7 +35,7 @@ public class KillController {
 			buffer.append(cmdPid);
 			buffer.append(" ");
 			buffer.append(param);
-		} catch (NumberFormatException e) { System.out.println(e); }
+		} catch (Exception e) { System.out.println(e); }
 		
 		chamaProcesso(buffer.toString());
 	}
